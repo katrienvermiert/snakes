@@ -1,0 +1,14 @@
+.title{
+    background-color: lightblue;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.score{
+    font-weight: 700;
+}
+
+#gameCanvas{
+    margin-left: 38.5vw;
+    margin-top: 5vh;
+}
