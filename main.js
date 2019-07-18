@@ -65,7 +65,7 @@ function drawSnake() {
 
 //create food
 function randomTen(min, max) {
-    return Math.round((Math.random() * (max-min) / 10) * 10);
+    return (Math.round(Math.random() * (max/10) + 1) * 10);
 }
 
 function createFood() {
@@ -92,9 +92,8 @@ function advanceSnake() {
     snake.unshift(head);
     const didEatFood = snake[0].x === foodX && snake[0].y === foodY;
     if(didEatFood){
-        alert('raak')
         score += 10;
-        document.getElementById('score').innerHTML = 'score';
+        document.getElementById('score').innerHTML = score;
         createFood();
     } else {
         snake.pop();
